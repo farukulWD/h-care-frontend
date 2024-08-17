@@ -1,12 +1,12 @@
-import { Button } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import React from "react";
 
 function HomePage() {
   return (
-    <div>
+    <Container>
       <h1>Home page</h1>
       <Button>Text</Button>
-    </div>
+    </Container>
   );
 }
 

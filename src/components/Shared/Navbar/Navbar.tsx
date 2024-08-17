@@ -1,4 +1,5 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
         justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Typography variant="h5" component={"h1"} fontWeight={600}>
+        <Typography variant="h4" component={Link} href="/" fontWeight={600}>
           H{" "}
           <Box component={"span"} color={"primary.main"}>
             C
@@ -18,13 +19,25 @@ function Navbar() {
           are
         </Typography>
         <Stack direction={"row"} gap={4} justifyContent={"space-between"}>
-          <Typography>Consultaiton</Typography>
-          <Typography>Health Plan</Typography>
-          <Typography>Medicine</Typography>
-          <Typography>Diagnostics</Typography>
-          <Typography>NGOs</Typography>
+          <Typography component={Link} href="/consultation">
+            Consultaiton
+          </Typography>
+          <Typography component={Link} href="/helth-plan">
+            Health Plan
+          </Typography>
+          <Typography component={Link} href="/medicine">
+            Medicine
+          </Typography>
+          <Typography component={Link} href="/diagnostics">
+            Diagnostics
+          </Typography>
+          <Typography component={Link} href="/ngos">
+            NGOs
+          </Typography>
         </Stack>
-        <Button>Login</Button>
+        <Button component={Link} href="/login">
+          Login
+        </Button>
       </Stack>
     </Container>
   );
