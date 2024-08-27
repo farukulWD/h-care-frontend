@@ -1,12 +1,12 @@
-import { Button, Container } from "@mui/material";
+import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
+
 import React from "react";
 
 function HomePage() {
   return (
-    <Container>
-      <h1>Home page</h1>
-      <Button>Text</Button>
-    </Container>
+    <>
+      <HeroSection />
+    </>
   );
 }
 
